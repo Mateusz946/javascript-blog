@@ -17,6 +17,9 @@ $font-text: 'Source Sans Pro', sans-serif;
 
 body {
   background: $color-light;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.411)), url("https://i.postimg.cc/rpt5BgG3/film.jpg");
+  background-size: cover;
+  background-position: center center;
   font-family: $font-text;
   color: $color-dark;
   font-weight: 300;
@@ -26,7 +29,11 @@ body {
 
 .container {
   max-width: 1140px;
-  margin: 0 auto;
+  margin: 100px auto;
+
+}
+h1{
+  color: rgb(255, 249, 249);
 }
 
 .section-title {
@@ -45,6 +52,8 @@ body {
 .wrapper {
   display: flex;
   margin-left: 10px;
+  flex-wrap: wrap;
+  
 }
 
 .sidebar {
@@ -81,6 +90,20 @@ body {
   padding: 0;
   .active {
     font-weight: bold;
+  }
+  li{
+    padding-top: 10px;
+    a{
+      text-decoration: none;
+      color: rgb(46, 45, 45);
+      font-weight: 600;
+      transition: all .4s;
+      &:hover{
+        color: rgb(182, 181, 181);
+        text-decoration: underline;
+        letter-spacing: 0.7px;
+      }
+    }
   }
 }
 

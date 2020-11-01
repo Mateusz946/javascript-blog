@@ -8,6 +8,10 @@
 
 body {
   background: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.411))), url("https://i.postimg.cc/rpt5BgG3/film.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.411)), url("https://i.postimg.cc/rpt5BgG3/film.jpg");
+  background-size: cover;
+  background-position: center center;
   font-family: "Source Sans Pro", sans-serif;
   color: #444;
   font-weight: 300;
@@ -17,7 +21,11 @@ body {
 
 .container {
   max-width: 1140px;
-  margin: 0 auto;
+  margin: 100px auto;
+}
+
+h1 {
+  color: #fff9f9;
 }
 
 .section-title {
@@ -39,6 +47,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-left: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .sidebar {
@@ -79,6 +89,24 @@ body {
 
 .list .active {
   font-weight: bold;
+}
+
+.list li {
+  padding-top: 10px;
+}
+
+.list li a {
+  text-decoration: none;
+  color: #2e2d2d;
+  font-weight: 600;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.list li a:hover {
+  color: #b6b5b5;
+  text-decoration: underline;
+  letter-spacing: 0.7px;
 }
 
 .list-horizontal li {
